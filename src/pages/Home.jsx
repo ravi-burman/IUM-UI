@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Box, Button, Stack, Typography } from "@mui/material";
+import styles from "./Home.module.css";
 
 export default function Home() {
   return (
-    <Box sx={{ p: 4, textAlign: "center" }}>
-      <Typography variant="h4" sx={{ mb: 2 }}>
+    <Box className={styles.root}>
+      <Typography variant="h4" className={styles.title}>
         Welcome to IUM UI
       </Typography>
       <Stack direction="row" spacing={2} justifyContent="center">

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Box, TextField, Grid, InputAdornment, IconButton, FormControlLabel, Checkbox, Button, MenuItem, Typography, Divider } from "@mui/material";
 import { Visibility, VisibilityOff, Email } from "@mui/icons-material";
 import AuthLayout from "../ui/components/AuthLayout";
+import styles from "./Register.module.css";
 
 export default function Register() {
   const [showPwd, setShowPwd] = React.useState(false);
@@ -99,11 +100,11 @@ export default function Register() {
               <Typography align="center" variant="body2">
                 Already have an account? <Link to="/login">Log in</Link>
               </Typography>
-              <Typography align="center" variant="caption" sx={{ color: 'text.secondary', mt: 1, display: 'block' }}>
+              <Typography align="center" variant="caption" className={styles.caption}>
                 By continuing to use our services, you acknowledge that you have both read and agree to our
-                <Box component="span" sx={{ fontWeight: 600 }}> Terms of Service </Box>
+                <Box component="span" className={styles.boldText}> Terms of Service </Box>
                 and
-                <Box component="span" sx={{ fontWeight: 600 }}> Privacy Policy</Box>.
+                <Box component="span" className={styles.boldText}> Privacy Policy</Box>.
               </Typography>
             </Box>
     </AuthLayout>

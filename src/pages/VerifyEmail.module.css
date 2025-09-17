@@ -1,0 +1,31 @@
+.center {
+  text-align: center;
+}
+
+.centerIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #ffe6f5;
+  margin: 0 auto 16px auto;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.primaryButton {
+  margin-top: 16px;
+}
+
+.linkButton {
+  margin-top: 8px;
+}
+
+.caption {
+  color: #6b7280;
+}

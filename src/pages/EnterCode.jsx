@@ -2,16 +2,17 @@ import React from "react";
 import { Box, Button, Divider, Link as MLink, TextField, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import AuthLayout from "../ui/components/AuthLayout";
+import styles from "./EnterCode.module.css";
 
 export default function EnterCode() {
   return (
     <AuthLayout activeTab="login">
       <Box>
-        <Box sx={{ width: 64, height: 64, borderRadius: '50%', background: '#ffe6f5', m: '0 auto', mb: 2, display: 'grid', placeItems: 'center', fontSize: 28 }}>🔑</Box>
-        <Typography variant="h5" sx={{ fontWeight: 700, textAlign: 'center', mb: 2 }}>Reset Password</Typography>
-        <TextField label="Email address" fullWidth defaultValue="smith.johnson@outlook.com" sx={{ mb: 2 }} />
-        <TextField label="Enter code" fullWidth sx={{ mb: 1.5 }} />
-        <MLink sx={{ display: 'inline-flex', alignItems: 'center', gap: 1, mb: 2 }} underline="none" href="#">Resend code</MLink>
+        <Box className={styles.centerIcon}>🔑</Box>
+        <Typography variant="h5" className={styles.title}>Reset Password</Typography>
+        <TextField label="Email address" fullWidth defaultValue="smith.johnson@outlook.com" className={styles.field} />
+        <TextField label="Enter code" fullWidth className={styles.field} />
+        <MLink className={styles.resendLink} underline="none" href="#">Resend code</MLink>
         <Button variant="contained" color="primary" fullWidth>Continue</Button>
         <Button variant="outlined" component={Link} to="/login" fullWidth sx={{ mt: 1 }}>⟵ Return to login</Button>
         <Divider sx={{ my: 2 }} />

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Box, Button, Checkbox, Divider, FormControlLabel, Grid, IconButton, InputAdornment, TextField, Typography } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import AuthLayout from "../ui/components/AuthLayout";
+import styles from "./Login.module.css";
 
 export default function Login() {
   const [showPwd, setShowPwd] = React.useState(false);
@@ -29,9 +30,9 @@ export default function Login() {
               }}
             />
           </Grid>
-          <Grid item xs={12} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <Grid item xs={12} className={styles.rememberRow}>
             <FormControlLabel control={<Checkbox />} label="Remember Me" />
-            <Typography variant="body2" component={Link} to="/forgot" style={{ textDecoration: 'none' }}>
+            <Typography variant="body2" component={Link} to="/forgot" className={styles.link}>
               Forgot Password?
             </Typography>
           </Grid>
