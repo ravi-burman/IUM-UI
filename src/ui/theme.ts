@@ -88,7 +88,7 @@ const theme = createTheme({
 // Attach custom tokens without requiring TypeScript module augmentation
 (theme as any).custom = {
 	gradients: {
-		hero: `linear-gradient(135deg, ${purpleDark} 0%, ${purple} 30%, ${magenta} 65%, #ff5bbd 100%)`,
+		// hero: `linear-gradient(135deg, ${purpleDark} 0%, ${purple} 30%, ${magenta} 65%, #ff5bbd 100%)`,
 		card: `linear-gradient(135deg, #ffffff 0%, #fff7fb 100%)`,
 	},
 	radius: { xl: 16 },

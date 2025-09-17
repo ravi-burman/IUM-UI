@@ -1,7 +1,10 @@
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
-  background: #f8fafc;
+  /* background: #f8fafc; */
+  background: url('./assets/images/background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
 }
