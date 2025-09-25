@@ -7,3 +7,21 @@
 .boldText {
   font-weight: 600;
 }
+
+.loginBox {
+  margin-top: 8px;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.loginLink {
+  color: #c40086;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 4px;
+}

@@ -1,7 +1,9 @@
 import { createTheme } from '@mui/material/styles';
 
 // Colors inspired by the provided screenshot (magenta/purple gradient UI)
+export const brandPink = '#C40086';
 const magenta = '#d1008f';
+// const brandPink = '#C40086';
 const magentaDark = '#a30071';
 const purple = '#6a00a3';
 const purpleDark = '#3b0b65';
@@ -11,7 +13,7 @@ const theme = createTheme({
 	palette: {
 		mode: 'light',
 		primary: {
-			main: magenta,
+			main: brandPink,
 			light: '#ff4db8',
 			dark: magentaDark,
 			contrastText: '#ffffff',
@@ -35,7 +37,7 @@ const theme = createTheme({
 		borderRadius: 12,
 	},
 	typography: {
-		fontFamily: 'Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif',
+		fontFamily: 'Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif',
 		h4: { fontWeight: 700 },
 		h5: { fontWeight: 600 },
 		button: { textTransform: 'none', fontWeight: 600 },
@@ -48,7 +50,12 @@ const theme = createTheme({
 					boxShadow: '0 2px 6px rgba(209,0,143,0.25)',
 				},
 				containedPrimary: {
-					backgroundImage: `linear-gradient(90deg, ${magenta} 0%, ${purple} 100%)`,
+					backgroundImage: 'none',
+					backgroundColor: brandPink,
+					color: '#fff',
+					'&:hover': {
+						backgroundColor: magentaDark,
+					},
 				},
 			},
 		},
@@ -92,6 +99,7 @@ const theme = createTheme({
 		card: `linear-gradient(135deg, #ffffff 0%, #fff7fb 100%)`,
 	},
 	radius: { xl: 16 },
+	brandPink,
 };
 
 export default theme;
